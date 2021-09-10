@@ -11,7 +11,7 @@ if($_POST){
         include "koneksi.php";
         $insert=mysqli_query($conn,"insert into kelas (nama_kelas, kelompok) value ('".$nama_kelas."','".$kelompok."')");
         if($insert){
-            echo "<script>alert('Sukses menambahkan kelas');location.href='tambah_kelas.php';</script>";
+            echo "<script>alert('Sukses menambahkan kelas');location.href='tampil_kelas.php';</script>";
         } else {
             echo "<script>alert('Gagal menambahkan kelas');location.href='tambah_kelas.php';</script>";
         }
